@@ -10,7 +10,7 @@
     since browsers support CSS Properties already.
  */
 
-  --SectionHero_desktopTitleMaxWidth: 625px;
+  --SectionHero_desktopTitleMaxWidth: 800px; /*FN: lengthens the SectionHero main title box*/
 
   --SectionHero_animation: {
     animation-name: animationTitle;
@@ -78,7 +78,7 @@
   animation-delay: 0.5s;
 
   @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
+    max-width: var(--SectionHero_desktopTitleMaxWidth); /*FN: under root */
   }
 }
 
