@@ -7,6 +7,10 @@ import { NamedLink } from '../../components';
 
 import css from './SectionHowItWorks.css';
 
+import step1Image from './icons/1.png';
+import step2Image from './icons/2.png';
+import step3Image from './icons/3.png';
+
 const SectionHowItWorks = props => {
   const { rootClassName, className } = props;
 
@@ -21,8 +25,9 @@ const SectionHowItWorks = props => {
 
       <div className={css.steps}>
         <div className={css.step}>
-          <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part1Title" />
+	      <img src={step1Image} alt="shlurp" className={css.locationImage}/>
+	      <h2 className={css.stepTitle}>
+	        <FormattedMessage id="SectionHowItWorks.part1Title" />
           </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part1Text" />
@@ -30,7 +35,8 @@ const SectionHowItWorks = props => {
         </div>
 
         <div className={css.step}>
-          <h2 className={css.stepTitle}>
+          <img src={step2Image} alt="blurp" className={css.locationImage} />
+	      <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part2Title" />
           </h2>
           <p>
@@ -39,7 +45,8 @@ const SectionHowItWorks = props => {
         </div>
 
         <div className={css.step}>
-          <h2 className={css.stepTitle}>
+          <img src={step3Image} alt="nurp" className={css.locationImage} />
+	      <h2 className={css.stepTitle}>
             <FormattedMessage id="SectionHowItWorks.part3Title" />
           </h2>
           <p>

@@ -16,7 +16,7 @@
 
 .step {
   @media (--viewportMedium) {
-    width: 324px;
+    width: 100%;
     margin-right: 40px;
   }
 }
@@ -43,4 +43,28 @@
   @media (--viewportMedium) {
     margin-top: 52px;
   }
+}
+
+/* A wrapper for a responsive image that holds it's aspect ratio */
+.imageWrapper {
+  position: relative;
+  width: 20%;
+  border-radius: 4px;
+  transition: var(--transitionStyleButton);
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: var(--boxShadowSectionLocationHover);
+  }
+}
+
+.locationImage {
+  /* Layout - image will take space defined by aspect ratio wrapper */
+  top: 10;
+  bottom: 10;
+  left: 10;
+  right: 10;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
 }

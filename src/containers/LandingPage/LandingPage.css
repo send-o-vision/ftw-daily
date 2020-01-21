@@ -37,7 +37,7 @@
 
   @media (--viewportLarge) {
     max-height: 800px;
-    min-height: 600px;
+    min-height: 700px;
     height: calc(70vh - var(--topbarHeightDesktop));
   }
 }
@@ -107,7 +107,7 @@
 }
 
 /* A bar on top of light sections */
-.section:nth-of-type(2n) .sectionContent::before {
+.section:nth-of-type(2) .sectionContent::before {
   background: var(--marketplaceColor);
   content: '';
   display: block;
