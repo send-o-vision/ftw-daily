@@ -12,11 +12,11 @@ import {
 } from '../../components';
 
 import css from './AboutPage.css';
-import image from './about-us-1056.jpg';
+import image from './about-us.jpeg';
+import image2 from './dumbanddumber.jpeg';
 
 const AboutPage = () => {
-  const { siteTwitterHandle, siteFacebookPage } = config;
-  const siteTwitterPage = twitterPageURL(siteTwitterHandle);
+  const { siteInstagramPage, siteFacebookPage } = config;
 
   // prettier-ignore
   return (
@@ -35,53 +35,41 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Experience the unique Finnish home sauna.</h1>
+          <h1 className={css.pageTitle}>Our mission is to make the outdoors more accessible</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>Did you know that Finland has 3.2 million saunas - almost one sauna per person!</p>
+              <p>Photo from Avalanche Gulch, Mt. Shasta, California</p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                Most of the Finnish saunas are located at the homes of individuals - indeed, most
-                people in Finland live in an apartment with sauna in it. In addition, lots of people
-                have lakeside summer cottages, which also typically come with a separate sauna
-                building near the waterfront.
+								Gear is expensive. Whether you're a skier trying to find send sticks, a
+								cyclist searching for a trusty steed, or a climber looking for bomber gear, 
+								we all know that the cost to get into the outdoors can be pretty steep.
               </h2>
 
               <p>
-                To truly experience a Finnish sauna, you need to look beyond the public saunas, and
-                instead visit a real home or cottage sauna. Saunatime makes this possible for
-                everyone. All our saunas are owned by individuals willing to let tourists and other
-                curious visitors to enter their sacred spaces.
-              </p>
+              	That's why we're creating Switchbackr: to increase the accessibility of the outdoors by making it easier to buy and sell gear. Not only that, but buying pre-owned is also better for the environment because it extends the effective lifespan of our gear! It's, in the words of Michael Scott, a "win-win-win-win," a win for you, a win for your counterparty, a win for the planet, and a win for us! 
+							</p>
 
-              <h3 className={css.subtitle}>Are you a sauna owner?</h3>
-
+              <h2 className={css.subtitle}>Our Story</h2>
+							<img className={css.subImage} src={image2} />
               <p>
-                Saunatime offers you a good way to earn some extra cash! If you're not using your
-                sauna every evening, why not rent it to other people while it's free. And even if
-                you are using your sauna every evening (we understand, it's so good), why not invite
-                other people to join you when the sauna is already warm! A shared sauna experience
-                is often a more fulfilling one.
-              </p>
+              	Hello there. We are Sasha and Alex, two seniors at Stanford who are passionate about sending it to the max in the outdoors. We are the founders of Switchbackr and jointly comprise <b>"The Good Team at Switchbackr"</b>. Sasha is a rock climber, surfer, and professional barefoot backpacker. Alex loves skiing, cycling, and mountaineering. Together they founded Switchbackr to make it easier for people like them to buy and sell gear and raise the stoke for the outdoors. 
+							</p>
 
               <h3 id="contact" className={css.subtitle}>
-                Create your own marketplace like Saunatime
+                Contact us
               </h3>
               <p>
-                Saunatime is brought to you by the good folks at{' '}
-                <ExternalLink href="http://sharetribe.com">Sharetribe</ExternalLink>. Would you like
-                to create your own marketplace platform a bit like Saunatime? Or perhaps a mobile
-                app? With Sharetribe it's really easy. If you have a marketplace idea in mind, do
-                get in touch!
+                Our customers (aka our "Swishies") are MEGA important to us, so please reach out whenever! You can get in touch with us by emailing <b>hello@switchbackr.com</b> or calling <b>650-268-4182</b>. You can also fill out {' '} <ExternalLink href="localhost:3000">this</ExternalLink> form if you're into forms. 
               </p>
               <p>
                 You can also checkout our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
-                <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
+                <ExternalLink href={siteInstagramPage}>Instagram</ExternalLink>.
               </p>
             </div>
           </div>

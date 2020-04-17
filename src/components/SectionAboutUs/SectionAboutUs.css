@@ -3,4 +3,5 @@
 .title{
 	@apply --marketplaceH1FontStyles
 	margin-top:0;
+	font-size:45px;
 }
