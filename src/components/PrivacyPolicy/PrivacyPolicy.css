@@ -12,6 +12,15 @@
       margin: 24px 0 24px 0;
     }
   }
+	& li {
+		/* AF: not sure why I need to do this, but formatting was weird without */
+		font-size: inherit;
+	}	
+	& ul {
+		@apply --marketplaceH4FontStyles;
+		list-style: initial;
+		padding: none;
+	}	
 
   & .lastUpdated {
     @apply --marketplaceBodyFontStyles;

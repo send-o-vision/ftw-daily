@@ -55,8 +55,8 @@ const PrivacyPolicyPageComponent = props => {
         <LayoutWrapperMain>
           <div className={css.content}>
             <h1 className={css.heading}>
-              <FormattedMessage id="PrivacyPolicyPage.heading" />
-            </h1>
+              Switchbackr Privacy Policy
+						</h1>
             <PrivacyPolicy />
           </div>
         </LayoutWrapperMain>
