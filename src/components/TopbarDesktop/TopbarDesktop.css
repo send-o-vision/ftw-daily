@@ -62,15 +62,17 @@
 
 /* logo */
 .logoLink {
-  @apply --TopbarDesktop_linkHover;
-  flex-shrink: 0;
-  /*padding: 21px 24px 21px 24px;*/
+  /*@apply --TopbarDesktop_linkHover;*/
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  padding: 21px 36px 21px 36px;
   height: 100%;
 
   @media (--viewportLarge) {
     /*FN: doesn't seem to do anything. Orig: padding: 21px 36px 21px 36px; */
-	  padding: 21px 36px 21px 36px;
-  }
+  	padding-left: 36px;
+	}
 }
 
 .logo {
