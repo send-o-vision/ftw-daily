@@ -19,43 +19,18 @@ const SectionHowItWorks = props => {
     <div className={classes}>
 	  <div className={css.title}>
         <FormattedMessage id="SectionHowItWorks.titleLineOne" />
-        <br />
-        <FormattedMessage id="SectionHowItWorks.titleLineTwo" />
       </div>
+			
+			
+				<p>
+					That forlorn pile of camping gear in your garage, those climbing shoes you bought but stopped using after realizing climbing is hard, that backpack you decommissioned after upgrading to the Flextrek Thirty-seven trillion Whipsnake. <b> If you've got gear that still works but you don't need, sell it on Switchbackr.</b> It's good for you, good for the outdoor community, and good for the planet too! 
+				</p> 
+				<p>
+					<b>Because the best gear is gear that's being used. Not gear in landfills.</b>
+				</p>	
+			
 
-      <div className={css.steps}>
-        <div className={css.step}>
-	      <img src={step1Image} alt="shlurp" className={css.locationImage}/>
-	      <h2 className={css.stepTitle}>
-	        <FormattedMessage id="SectionHowItWorks.part1Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part1Text" />
-          </p>
-        </div>
-
-        <div className={css.step}>
-          <img src={step2Image} alt="blurp" className={css.locationImage} />
-	      <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part2Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part2Text" />
-          </p>
-        </div>
-
-        <div className={css.step}>
-          <img src={step3Image} alt="nurp" className={css.locationImage} />
-	      <h2 className={css.stepTitle}>
-            <FormattedMessage id="SectionHowItWorks.part3Title" />
-          </h2>
-          <p>
-            <FormattedMessage id="SectionHowItWorks.part3Text" />
-          </p>
-        </div>
-      </div>
-
-      <div className={css.createListingLink}>
+			<div className={css.createListingLink}>
         <NamedLink name="NewListingPage">
           <FormattedMessage id="SectionHowItWorks.createListingLink" />
         </NamedLink>
