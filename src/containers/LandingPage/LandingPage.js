@@ -9,6 +9,7 @@ import config from '../../config';
 import {
 	Page,
   SectionHero,
+	SectionHeroV2,
   SectionHowItWorks,
   SectionLocations,
 	SectionAboutUs,
